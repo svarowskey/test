@@ -13,7 +13,7 @@
 <body>
 <div class="container-fluid no-padding">
     <main>
-        <section class="start-section animated">
+        <section class="start-section height-device" id="start-section">
             <div class="container start-section-container">
                 <nav class="navbar navbar-expand-lg navbar-dark">
                         <a class="navbar-brand" href="#">
@@ -49,6 +49,7 @@
                         </div>
                     </nav>
 
+                <div class="container">
                     <div class="slider">
                         <div class="slide row">
                             <div class="text">
@@ -72,6 +73,7 @@
                             </ul>
                         </div>
                     </div>
+                </div>
 
                     <div class="more">
                         <span>Find out more</span>
@@ -80,21 +82,21 @@
             </div>
         </section>
 
-        <section class="scores-section animated" id="scores">
-            <div class="container">
-                <div class="score">
+        <section class="scores-section container" id="scores">
+            <div class="row no-margin">
+                <div class="score col-lg-4 col-sm-12 col-xs-12">
                     <h1>126,300</h1>
                     <span>
                         Identity Theft Cases Reported in Australia
                     </span>
                 </div>
-                <div class="score">
+                <div class="score col-lg-4 col-sm-12 col-xs-12">
                     <h1>$20.1bn</h1>
                     <span>
                         Online Transactions per annum by Australians
                     </span>
                 </div>
-                <div class="score">
+                <div class="score col-lg-4 col-sm-12 col-xs-12">
                     <h1>45,511</h1>
                     <span>Online Fraud Cases Reported in Australia
                     </span>
@@ -102,7 +104,7 @@
             </div>
         </section>
 
-        <section class="what-we-do-section animated">
+        <section class="what-we-do-section">
             <div class="container what-we-do__content">
                 <div class="title">What We Do</div>
                 <div class="row">
@@ -176,7 +178,7 @@
             </div>
         </section>
 
-        <section class="product-spotlight-section container-fluid animated">
+        <section class="product-spotlight-section container-fluid">
             <div class="product-spotlight-content row">
                 <div class="text-container col-lg-6 col-sm-12">
                     <div class="text">
@@ -195,17 +197,18 @@
             </div>
         </section>
 
-        <section class="ready-started-section container-fluid animated">
+        <section class="ready-started-section container-fluid">
             <div class="container ready-started">
                 <h2>Ready to get started?</h2>
                 <button class="button-style">CONTACT US</button>
             </div>
         </section>
 
-        <div class="main-footer container-fluid animated">
+        <section class="main-footer container-fluid">
             <div class="container">
                 <div class="footer-container row">
-                    <div class="twitter-feed-content">
+
+                    <div class="twitter-feed-content col-lg-1 col-sm-12">
                         <div class="twitter-feed-content-header">
                             <div class="twitter-feed-content-header-logo"></div>
                             <div class="twitter-feed-content-header-title">
@@ -234,41 +237,43 @@
                             </figure>
                         </div>
                     </div>
+                    <div class="row main-footer-row">
+                        <div class="footer-list col-sm-4 col-xs-12">
+                            <span class="footer-list-title">Navigation</span>
+                            <ul class="footer-list-list">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Products</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Resources</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">CONTACT US</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-list col-sm-4 col-xs-12">
+                            <span class="footer-list-title">Links</span>
+                            <ul class="footer-list-list">
+                                <li><a href="#">Disclaimer</a></li>
+                                <li><a href="#">Legal</a></li>
+                                <li><a href="#">Environment Policy</a></li>
+                                <li><a href="#">Privacy</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-list col-sm-4 col-xs-12">
+                            <span class="footer-list-title">Contact sales</span>
+                            <ul class="footer-list-list">
+                                <li><a href="tel:+61396144416" class="address">PHONE:<address>+61 3 9614 4416</address></a></li>
+                                <li><a href="mailto:sales@saltgroup.com.au" class="address">EMAIL:<address>sales@saltgroup.com.au</address></a></li>
+                            </ul>
+                        </div>
+                    </div>
 
-                    <div class="footer-list">
-                        <span class="footer-list-title">Navigation</span>
-                        <ul class="footer-list-list">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Products</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Resources</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">CONTACT US</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-list">
-                        <span class="footer-list-title">Links</span>
-                        <ul class="footer-list-list">
-                            <li><a href="#">Disclaimer</a></li>
-                            <li><a href="#">Legal</a></li>
-                            <li><a href="#">Environment Policy</a></li>
-                            <li><a href="#">Privacy</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-list">
-                        <span class="footer-list-title">Contact sales</span>
-                        <ul class="footer-list-list">
-                            <li><a href="tel:+61396144416" class="address">PHONE:<address>+61 3 9614 4416</address></a></li>
-                            <li><a href="mailto:sales@saltgroup.com.au" class="address">EMAIL:<address>sales@saltgroup.com.au</address></a></li>
-                        </ul>
-                    </div>
                 </div>
             </div>
-            <div class="footer-logo"></div>
-        </div>
+            <a href="#start-section" class="footer-logo"></a>
+        </section>
     </main>
     <footer>
-        <span class="footer-text">© 2017 SALT GROUP <img src="images/footer-icon.png" alt=""> ALL RIGHTS RESERVED. WEBSITE BY DORNE CREATIVE.</span>
+        <span class="footer-text">© 2017 SALT GROUP<img src="images/footer-icon.png" alt=""> ALL RIGHTS RESERVED. WEBSITE BY DORNE CREATIVE.</span>
     </footer>
 </div>
 
@@ -281,5 +286,22 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+<script>
+    $('document').ready(function () {
+        let perem = 0;
+        let startSection = $('#start-section');
+        $('.navbar-toggler').click(function () {
+            if (perem === 0) {
+                startSection.removeClass('height-device');
+                startSection.addClass('no-height');
+                perem = 1;
+            } else {
+                startSection.removeClass('no-height');
+                startSection.addClass('height-device');
+                perem = 0;
+            }
+        });
+    })
+</script>
 </body>
 </html>

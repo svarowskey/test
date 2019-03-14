@@ -31,9 +31,8 @@ main .start-section {
   font-family: ProximaNova;
   color: #ffffff;
   width: 100%;
-  height: 810px;
-  background: url("../images/Polygon-BG.png") no-repeat;
-  background-size: 100% 810px;
+  background: url(../images/Polygon-BG.png) no-repeat;
+  background-size: 100% 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
@@ -41,7 +40,9 @@ main .start-section {
     height: inherit;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; }
+    justify-content: space-between;
+    min-width: 1280px;
+    margin: 0 auto; }
   main .start-section .navbar.navbar-expand-lg {
     margin: 0 -15px;
     padding: 32px 0 0 0; }
@@ -135,7 +136,7 @@ main .start-section {
       transition: .5s; }
       main .start-section .more .go-more:hover {
         background: url("../images/arrow-more-hov.png"); }
-main .scores-section .container {
+main .scores-section {
   font-family: ProximaNova;
   display: flex;
   justify-content: center;
@@ -143,19 +144,15 @@ main .scores-section .container {
   color: #7050e5;
   font-weight: 700;
   padding: 130px 0; }
-  main .scores-section .container .score {
-    flex-direction: column;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 0 20px;
+  main .scores-section .score {
+    text-align: center;
     flex-shrink: 2; }
-    main .scores-section .container .score:nth-child(2) {
+    main .scores-section .score:nth-child(2) {
       flex-shrink: 3; }
-    main .scores-section .container .score h1 {
+    main .scores-section .score h1 {
       font-size: 60px;
       font-weight: bold; }
-    main .scores-section .container .score span {
+    main .scores-section .score span {
       font-size: 20px;
       text-align: center;
       text-transform: uppercase; }
@@ -174,7 +171,8 @@ main .what-we-do-section {
       text-align: right;
       padding: 30px 50px 0 0;
       background: url(../images/what-we-do.png) no-repeat;
-      background-position-x: right; }
+      background-position-x: right;
+      background-size: 4.5%; }
     main .what-we-do-section .what-we-do__content .row {
       margin: 50px 0 0 0;
       padding: 0 30px; }
@@ -259,11 +257,15 @@ main .ready-started-section {
 main .main-footer {
   background-color: #363636;
   position: relative; }
+  main .main-footer-row {
+    flex-grow: 1;
+    margin-left: 80px; }
   main .main-footer .footer-container {
     justify-content: space-between;
     padding: 60px 0 50px; }
     main .main-footer .footer-container .twitter-feed-content {
-      max-width: 300px;
+      min-width: 300px;
+      width: 300px;
       font-family: 'Myriad Pro'; }
       main .main-footer .footer-container .twitter-feed-content-header {
         display: flex; }
@@ -372,14 +374,59 @@ footer {
 .no-padding {
   padding: 0; }
 
+.no-margin {
+  margin: 0; }
+
+.no-height {
+  min-height: 100vh; }
+
+.height-device {
+  height: 100vh; }
+
 @media screen and (max-width: 1360px) {
+  main .start-section-container {
+    min-width: auto; }
+
+  main .start-section .slider {
+    height: 200px; }
+
+  main .start-section .slider .slide .text h1 {
+    font-size: 40px;
+    line-height: 18px; }
+
+  main .start-section .slider .slide .text span {
+    font-size: 14px;
+    line-height: 20px; }
+
   main .start-section .slider .dots {
     right: -40px; } }
 @media screen and (max-width: 1200px) {
   main .product-spotlight-section .product-spotlight-content {
     display: flex;
-    padding: 106px 80px; } }
+    padding: 106px 80px; }
+
+  main .what-we-do-section .what-we-do__content .title {
+    padding: 20px 30px 0 0;
+    font-size: 50px; }
+
+  main .main-footer-row {
+    flex-grow: 1;
+    margin-left: 40px; } }
 @media screen and (max-width: 990px) {
+  main .start-section .slider .slide .text h1 {
+    font-size: 30px; }
+
+  main .scores-section .score:nth-child(1n + 2) {
+    margin-top: 60px; }
+
+  main .what-we-do-section .what-we-do__content {
+    padding: 80px 0; }
+
+  main .what-we-do-section .what-we-do__content article {
+    margin-top: 0; }
+    main .what-we-do-section .what-we-do__content article:nth-child(2n + 3) {
+      margin-top: 50px; }
+
   main .product-spotlight-section .product-spotlight-content {
     display: flex;
     padding: 60px 80px; }
@@ -388,6 +435,68 @@ footer {
     align-self: center; }
 
   main .product-spotlight-section .product-spotlight-content .text-container .text {
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+
+  main .main-footer .footer-container .twitter-feed-content {
+    width: 100%; }
+
+  main .main-footer-row {
+    flex-grow: 1;
+    margin-top: 60px;
+    margin-left: 0; } }
+@media screen and (max-width: 768px) {
+  main .start-section .slider .slide .text h1 {
+    font-size: 26px; }
+
+  main .start-section .slider .slide .text span {
+    font-size: 12px; }
+
+  main .start-section .slider .slide .image {
+    display: none; }
+
+  main .what-we-do-section .what-we-do__content .title {
+    font-size: 40px;
+    padding: 10px 20px 0 0; }
+
+  main .what-we-do-section .what-we-do__content article {
+    margin-top: 0; }
+    main .what-we-do-section .what-we-do__content article:nth-child(1n + 2) {
+      margin-top: 50px; } }
+@media screen and (max-width: 576px) {
+  main .start-section .navbar.navbar-expand-lg {
+    margin: 0;
+    padding: 16px 16px; }
+
+  main .start-section .slider .slide {
+    padding-right: 40px; }
+
+  main .start-section .slider .slide .text h1 {
+    font-size: 24px; }
+
+  main .start-section .slider .slide .text span {
+    font-size: 12px;
+    padding-right: 10px; }
+
+  main .start-section .slider .dots {
+    right: 0; }
+
+  main .scores-section .score h1 {
+    font-size: 48px; }
+
+  main .scores-section .score span {
+    font-size: 18px; }
+
+  main .what-we-do-section .what-we-do__content .title {
+    margin-right: 40px; }
+
+  main .main-footer .footer-container .footer-list {
+    font-family: ProximaNova;
+    font-size: 14px;
+    text-align: center; }
+    main .main-footer .footer-container .footer-list:nth-child(1n + 2) {
+      margin-top: 40px; }
+
+  .button-style {
+    align-self: center; } }
 
 /*# sourceMappingURL=style.css.map */
