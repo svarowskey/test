@@ -490,6 +490,11 @@ footer {
   main .what-we-do-section .what-we-do__content .title {
     margin-right: 40px; }
 
+  main .product-spotlight-section .product-spotlight-content {
+    padding: 50px 20px; }
+    main .product-spotlight-section .product-spotlight-content .text-container .text h2 {
+      font-size: 34px; }
+
   main .main-footer .footer-container .footer-list {
     font-family: ProximaNova;
     font-size: 14px;
